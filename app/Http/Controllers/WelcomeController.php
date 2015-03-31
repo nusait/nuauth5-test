@@ -30,6 +30,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
+		echo 'hi!';
 		if ( ! \Auth::attempt(['netid' => env('NETID'), 'password' => env('PW')])) {
 			dd('Sorry you are not who you say you are :(');
 		} else {

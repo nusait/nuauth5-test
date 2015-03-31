@@ -1,5 +1,5 @@
 <?php
 return [
-	"rdn" => $_ENV['ldap_rdn'],
-	"password" => $_ENV['ldap_pass'],
+	"rdn" => env('ldap_rdn'),
+	"password" => env('ldap_pass'),
 ];
